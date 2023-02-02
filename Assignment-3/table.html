@@ -20,10 +20,11 @@
 			<th>TYPE</th>
 			<th>BUDGET<br />#</th>
 			<th>PERCENTAGE</th>
-			<th>DELETE</th>
+			<!--th id="delete" class="hide">DELETE</th>
+			<th id="edit" class="hide">EDIT</th-->
 		</tr>
 		<tr>
-			<td><input type="checkbox" /><br /><br /><img src="down.png" width="25px" /></td>
+			<td><input type="checkbox" onclick="onCheckBoxClick(this)"/><br /><br /><img src="down.png" width="25px" onclick="toggleDetails(this)"/></td>
 			<td>Student 1</td>
 			<td>Teacher 1</td>
 			<td>Approved</td>
@@ -31,30 +32,10 @@
 			<td>TA</td>
 			<td>12345</td>
 			<td>100%</td>
-			<td></td>
+			<!--td></td-->
 		</tr>
 		<tr class="dropDownTextArea"><td colspan="8">
-			Advisor:<br /><br />
-			Award Details<br />
-			Summer 1-2014(TA)<br />
-			Budget Number: <br />
-			Tuition Number: <br />
-			Comments:<br /><br /><br />
-			Award Status:<br /><br /><br />
-		</td></tr>
-		<tr bgcolor="orange">
-			<td><input type="checkbox" checked/><br /><br /><img src="down.png" width="25px" /></td>
-			<td>Student 2</td>
-			<td>Teacher 2</td>
-			<td>Approved</td>
-			<td>Fall</td>
-			<td>TA</td>
-			<td>23456</td>
-			<td>100%</td>
-			<td><button>Delete</button></td>
-		</tr>
-		<tr class="dropDownTextArea"><td colspan="8">
-			Advisor:<br /><br />
+			Advisor 1:<br /><br />
 			Award Details<br />
 			Summer 1-2014(TA)<br />
 			Budget Number: <br />
@@ -63,7 +44,27 @@
 			Award Status:<br /><br /><br />
 		</td></tr>
 		<tr>
-			<td><input type="checkbox" /><br /><br /><img src="down.png" width="25px" /></td>
+			<td><input type="checkbox" onclick="onCheckBoxClick(this)"/><br /><br /><img src="down.png" onclick="toggleDetails(this)" width="25px"/></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+			<!--td><button>Delete</button></td-->
+		</tr>
+		<tr class="dropDownTextArea"><td colspan="8">
+			Advisor 2:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr>
+			<td><input type="checkbox" onclick="onCheckBoxClick(this)"/><br /><br /><img src="down.png" width="25px" onclick="toggleDetails(this)"/></td>
 			<td>Student 3</td>
 			<td>Teacher 3</td>
 			<td>Approved</td>
@@ -71,10 +72,10 @@
 			<td>TA</td>
 			<td>34567</td>
 			<td>100%</td>
-			<td></td>
+			<!--td></td-->
 		</tr>
 		<tr class="dropDownTextArea"><td colspan="8">
-			Advisor:<br /><br />
+			Advisor 3:<br /><br />
 			Award Details<br />
 			Summer 1-2014(TA)<br />
 			Budget Number: <br />
@@ -87,7 +88,7 @@
 	<br /><br />
 	
 	<button id="button">SUBMIT SELECTED AWARDS</button>
-	<button id="add">Add New Student</button>
+	<button id="add" onclick="addNewRow()">Add New Student</button>
 
 	<nav class="socialmediaicons"></nav>
 	<script src="script.js"></script>

@@ -17,8 +17,20 @@
 }
 #button {
 	color:#fff;
-	background-color: orange;
+	background-color: grey;
 	border-radius: 3px;
-	border:2px solid orange;
+	border:2px solid grey;
 	margin-left: 180px;
+}
+
+.dropDownTextArea{
+	//display: none;
+}
+
+.collapse{
+	width: 25px;
+}
+
+.hide{
+	display: none;
 }
